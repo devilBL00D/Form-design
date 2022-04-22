@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>form</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="d-flex flex-column">
+    <div class="d-flex flex-column" style="width: 100vw;height: 90vh;border-style: solid;">
+        <header class="d-flex justify-content-md-center align-items-md-center" style="width: 100vw;height: 15vh;">
+            <div class="d-md-flex flex-column justify-content-md-center align-items-md-center" style="width: 100vw;height: 15vh;margin: auto;border-width: 6px;border-color: var(--bs-red);">
+                <h1 class="text-uppercase fw-bold text-primary" style="font-weight: bold;font-size: 50px;">Farm Produce Direct</h1>
+                <h1 class="fs-5" style="font-weight: bold;font-size: 50px;">For Victoria Use Only</h1>
+            </div>
+        </header>
+        <main style="width: 100vw;height: 75vh;padding: 5px;">
+            <div class="flex-wrap" style="width: 100%;height: 50vh;border-style: none;">
+                <div class="d-flex flex-column justify-content-center align-items-center align-content-center flex-wrap" style="margin: 0vh 2vw;padding: 10px;width: 100vw;height: 80vh;box-shadow: 0px 0px;border-radius: 9px;font-weight: bold;font-size: 20px;">
+                    <div class="d-flex flex-column align-items-center align-content-center" style="width: 40vw;height: 65vh;margin: 5vh 5vw;padding: 10px;box-shadow: 0px 0px 3px 0px;opacity: 0.93;background: #ffffff;border-radius: 19px;border-style: solid;border-color: var(--bs-blue);border-top-style: solid;border-right-style: solid;border-bottom-style: none;border-left-style: solid;">
+                        <h1 class="d-flex align-content-center" style="font-size: 50px;font-weight: bold;padding: 1px;border-style: none;height: 8vh;color: rgb(0,0,0);">Register</h1>
+                        <form class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex flex-row" style="width: 32vw;height: 5vh;margin: 1vh 2vw;margin-top: 3vh;border-radius: 7px;border: 1px solid var(--bs-blue);"><i class="fas fa-user d-flex flex-row justify-content-center align-items-center" style="width: 3vw;height: 100%;padding: 1px;border-style: none;"></i><input class="form-control d-flex flex-row" type="text" required="" style="border-style: solid;width: 100%;" pattern="&quot;/^[a-zA-Z]{3,20}(?: [a-zA-Z]+){0,2}$/&quot;" placeholder="Full Name"></div>
+                            <div class="d-flex flex-row" style="width: 32vw;height: 5vh;margin: 1vh 2vw;border-radius: 7px;border: 1px solid var(--bs-blue);"><i class="fas fa-envelope d-flex flex-row justify-content-center align-items-center" style="width: 3vw;height: 100%;padding: 1px;border-style: none;"></i><input class="form-control d-flex flex-row" type="text" required="" style="border-style: solid;width: 100%;" placeholder="Email-address"></div>
+                            <div class="d-flex flex-row" style="width: 32vw;height: 5vh;margin: 1vh 2vw;border-radius: 7px;border: 1px solid var(--bs-blue);"><i class="fas fa-phone-alt d-flex flex-row justify-content-center align-items-center" style="width: 3vw;height: 100%;padding: 1px;border-style: none;"></i><input class="form-control d-flex flex-row" type="text" required="" style="border-style: solid;width: 100%;" pattern="&quot;/^(?=.*)((?:\+61) ?(?:\((?=.*\)))?([2-47-8])\)?|(?:\((?=.*\)))?([0-1][2-47-8])\)?) ?-?(?=.*)((\d{1} ?-?\d{3}$)|(00 ?-?\d{4} ?-?\d{4}$)|( ?-?\d{4} ?-?\d{4}$)|(\d{2} ?-?\d{3} ?-?\d{3}$))/&quot;" placeholder="Phone Number"></div>
+                            <div class="d-flex flex-row" style="width: 32vw;height: 5vh;margin: 1vh 2vw;border-radius: 7px;border: 1px solid var(--bs-blue);"><i class="fas fa-map-marker-alt d-flex flex-row justify-content-center align-items-center" style="width: 3vw;height: 100%;padding: 1px;border-style: none;"></i><input class="form-control d-flex flex-row" type="text" required="" style="border-style: solid;width: 100%;" placeholder="Delivery only availabe in Victoria"></div>
+                            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 32vw;height: 7vh;margin: 1vh 2vw;border-radius: 7px;border: 1px none var(--bs-blue);">
+                                <h1 style="font-size: 15px;">--Select&nbsp; Your Region--</h1><select class="form-select d-flex justify-content-center align-items-center align-content-center" style="margin: 0vh 2vw;height: 10vh;width: 32vw;background: rgb(255, 255, 255);border-style: solid;border-color: var(--bs-blue);border-radius: 7px;">
+                                    <optgroup label="Refer to Map Provided">
+                                        <option value="12" selected="">Region 1 ( $5 delivery Charge )</option>
+                                        <option value="13">Region 2 ( $10 delivery Charge )</option>
+                                        <option value="14">Region 3 ( $12delivery Charge )</option>
+                                        <option value=""></option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-check" style="width: 80%;height: 4vh;margin: auto;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Subscribe to our newsletter</label></div>
+                            <div class="d-flex flex-column justify-content-center align-items-center" style="border-radius: 10px;"><a class="btn btn-primary btn-lg" role="button" href="membership.html">Register</a></div>
+                            <div class="d-flex justify-content-center align-items-center align-content-center" style="height: 2vh;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="d-flex flex-column flex-fill justify-content-center" style="width: 100vw;height: 10vh;color: rgb(255,255,255);background: var(--bs-gray-900);">
+        <h1 class="d-flex justify-content-center align-items-center align-content-center">FOOTER</h1>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>
